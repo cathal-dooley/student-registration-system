@@ -12,13 +12,16 @@ import java.util.List;
  *
  * @author Cathal
  */
+//student class
 public class student {
-    private String fname;     // first name
-    private String lname;      // last name
-    private String age;     // 
+    //student variables
+    private String fname;     
+    private String lname;     
+    private String age;       
     private int id; 
     private String username;
     
+    //student constructer
     public student(String f, String l, String age, int id, String u) {
         this.fname   = f;
         this.lname   = l;
@@ -26,7 +29,7 @@ public class student {
         this.id = id;
         this.username = u;
     }
- 
+    //student get methods
      public String getFname() {
     	return fname;
     }
@@ -42,6 +45,7 @@ public class student {
     public String getUsername() {
         return fname + lname + age;
     }
+    //student toString method returns student object as string
     public String toString () {
 	return "name:" +" " +fname +" " +lname +"," 
               +"age:" + " " + age + "," 

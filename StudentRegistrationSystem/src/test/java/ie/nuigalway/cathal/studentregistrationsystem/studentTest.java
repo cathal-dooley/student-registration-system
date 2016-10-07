@@ -18,14 +18,17 @@ import org.junit.Test;
 public class studentTest {
     @Test
     public void testGet() {
+        // assign variable values
         String fname = "Cathal";
         String lname = "Dooley";
         String age = "20";
         int id = 13533663; 
         String username = "CathalDooley20";
-        
+        //new student object
         student student = new student(fname, lname, age, id, username);
+        //create a string uname using the getUsername() method from the student class
         String uname = student.getUsername();
+        //test to determine if username correctly concatenates 
         Assert.assertEquals(username, uname);
            
     }

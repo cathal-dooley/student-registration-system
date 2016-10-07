@@ -16,19 +16,24 @@ import org.joda.time.format.DateTimeFormatter;
  *
  * @author Cathal
  */
+//courseProgramme class
 public class courseProgramme {
-    private String name;         
+    //courseProgramme variables
+    private String name;
+    //list of modules in the course  
     List<module> listOfModules = new ArrayList();
+    //joda DateTime start an end dates
     DateTime startDate = new DateTime();
     DateTime endDate = new DateTime();
     
+    //courseProgramme constructor
     public courseProgramme(String n, List<module> lm, DateTime sd, DateTime ed) {
         this.name   = n;
         this.listOfModules   = lm;
         this.startDate   = sd;
         this.endDate   = ed;
     }
-    
+    //courseProgramme get methods
     public String getName() {
     	return name;
     }
@@ -41,6 +46,7 @@ public class courseProgramme {
     public DateTime getEDate() {
     	return endDate;
     }
+    //courseProgramme toString method returns courseProgramme object as string
     public String toString () {
 	return "Course Name:" +" " +name +"," 
               +"List of Modules:" +" " +listOfModules +"," 
