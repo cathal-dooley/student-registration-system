@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<project name="StudentRegistrationSystem" default="jar" basedir=".">
-
-  <target name="help">
-    <echo message="Please run: $ant -projecthelp"/>
-  </target>
-</project>
